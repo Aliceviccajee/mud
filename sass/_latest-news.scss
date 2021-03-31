@@ -58,6 +58,10 @@
       @media (min-width: $phone-l) {
         flex: 28%;
       }
+      img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
       p {
         font-size: 25px;
         line-height: 1.2;

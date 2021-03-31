@@ -718,6 +718,11 @@ textarea,
   }
 }
 
+.latest-news .articles .article img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 .latest-news .articles .article p {
   font-size: 25px;
   line-height: 1.2;
