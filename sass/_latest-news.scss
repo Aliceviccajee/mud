@@ -1,0 +1,93 @@
+.latest-news {
+  padding: 2em;
+  @media (min-width: $phone-l) {
+    padding: $section-padding;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    h2 {
+      padding-bottom: 20px;
+      @media (min-width: $phone-l) {
+        padding-bottom: 2em;
+      }
+    }
+    .view {
+      border: 2px solid black;
+      height: 40px;
+      display: flex;
+      width: 100px;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .view:hover {
+      .arrow {
+        transform: scale(1.3);
+      }
+    }
+    .arrow:after {
+      content: "";
+      display: inline-block !important;
+      width: 0;
+      height: 0;
+      border-left: 8px solid $blue;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      vertical-align: middle;
+    }
+    
+    .arrow:before {
+      width: 10px;
+      height: 2px;
+      background: $blue;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .articles {
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    .article {
+      @media (max-width: $phone-l) {
+        margin-bottom: 2em;
+      }
+      @media (min-width: $phone-l) {
+        flex: 28%;
+      }
+      p {
+        font-size: 25px;
+        line-height: 1.2;
+      }
+      .date {
+        font-size: 11px;
+        padding: 1em 0;
+      }
+    }
+  }
+  .cta-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 1em;
+    @media (min-width: $phone-l) {
+      margin-top: 7em;
+      padding: 3em;
+    }
+    .btn {
+      margin-top: 3em;
+      width: 250px;
+    }
+    .shaddow {
+      width: 250px;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+}

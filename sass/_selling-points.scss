@@ -1,14 +1,19 @@
 .selling-points {
-  padding: $section-padding;
-  padding: 300px 0 100px 0;
   background: $blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 150px 0 100px 0;
+  @media (min-width: $phone-l) {    
+    padding: 300px 0 100px 0;
+  }
   .wrap {
     display: flex;
     justify-content: center;
-    padding-bottom: 2em;
+    padding: 0 1em 2em 1em;
+    @media (max-width: $phone-l) {
+      text-align: center;
+    }
     h3 {
       color: white;
       font-size: 30px;
@@ -18,11 +23,15 @@
   .points {
     display: flex;
     gap: 2%;
+    flex-wrap: wrap;
     .point {
-      flex: 25%;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 2em;
+      @media (min-width: $phone-l) {
+        flex: 25%;
+      }
       .icon {
         width: 120px;
         height: 120px;
@@ -57,11 +66,14 @@
 }
 
 .curve {
-  height: 200px;
   background-color:white;
+  height: 100px;
   border-bottom-left-radius: 250% 200%;
   border-bottom-right-radius: 250% 200%;
   z-index: 10;
   width: 100%;
   position: absolute;
+  @media (min-width: $phone-l) {
+    height: 200px;
+  }
 }

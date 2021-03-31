@@ -19,22 +19,35 @@ $blue: #00C9FF;
 //
 // Breakpoints
 //
+// Breakpoints
+$phone-s: 320px;       // pure-u-p-
+$phone: 450px;       // pure-u-p-
+$phone-l: 650px;       // pure-u-pl-
+$tablet-s: 768px;      // pure-u-ts-
+$tablet-m: 840px;      // pure-u-tm-
+$tablet: 980px;        // pure-u-t-
+$tablet-l: 1024px;     // pure-u-tl-
+$tablet-xl: 1124px;    // pure-u-txl-
+$laptop-s: 1280px;     // pure-u-ls-
+$laptop: 1380px;
+$laptop-l: 1580px;
+$desktop: 1800px;
 
-$sm-viewport: 560px;
-$md-viewport: 760px;
-$lg-viewport: 960px;
 
-$section-padding: 3em 5em;
+$section-padding: 3em 8em;
 $box: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
 
 .btn {
-  width: 365px;
   border: 2px solid black;
-  padding: 1em 5em;
+  padding: 1em 0;
   text-transform: uppercase;
   text-align: center;
   display: block;
+  width: 250px;
+  @media (min-width: $phone-l) {
+    width: 325px;
+  }
 }
 
 .button-wrap:hover {
@@ -56,13 +69,20 @@ $box: 0px 8px 15px rgba(0, 0, 0, 0.1);
   background: $blue;
 }
 
+nav {
+  list-style: none;
+}
+
 .shaddow {
-  width: 365px;
   height: 51px;
   transform: translate(-5px, -44px);
   z-index: -1;
   position: absolute;
   border: 2px solid black;
-
+  width: 250px;
+  @media (min-width: $phone-l) {
+    width: 325px;
+  }
 }
+
 

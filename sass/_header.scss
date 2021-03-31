@@ -1,14 +1,18 @@
 .header {
-  padding: 2em 4em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em;
+  @media (min-width: $phone-l) {
+    padding: 2em 4em;
+  }
   .logo {
     img {
       height: 66px;
     }
   }
   .nav-wrapper {
+    display: none;
     ul ul {
       display: none;
     }
@@ -41,3 +45,72 @@
   }
 }
 
+ 
+.menu-toggle {
+  display: block;
+  @media (min-width: $tablet-m) {
+    display: none;
+  }
+    margin-right: 18px;
+    height: 15px;
+    .line {
+      display: flex;
+      width: 35px;
+      height: 1px;
+      margin-bottom: 7px;
+      position: relative;
+      border-radius: 3px;
+      background: black;
+      z-index: 100;
+      transform-origin: 8px -2px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+  }      
+
+.mobile-nav-container {
+  display: none;
+}
+.mobile-menu {
+  margin: 30px 0;
+  height: 500px;
+  width: 100%;
+  padding: 0;
+  ul {
+    margin-bottom: 10px;
+  }
+}
+.mobile-menu-open {
+  position: absolute;
+  right: 0;
+  background: $blue;
+  top: 84px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: space-between;
+  nav {
+    width: 300px;
+    li {
+      padding: 10px 0;
+    }
+  }
+}
+
+.menu-open {
+  .one {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+  }
+  .three {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  .two {
+    transform: rotate(-45deg) translate(-5px, -2px);
+  }
+}

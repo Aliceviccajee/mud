@@ -1,20 +1,33 @@
 .hero {
-  padding: $section-padding;
+  padding: 2em;
+  @media (min-width: $phone-l) {
+    padding: $section-padding;
+  }
+
   .hero-wrap {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 0 5em 5em;
+    flex-wrap: wrap;
     align-items: center;
+    @media (min-width: $phone-l) {
+      padding: 0 0 5em 5em;
+    }
     img {
-      width: 60%;
+      width: 90%;
+      @media (min-width: $phone-l) {
+        width: 60%;
+      }
     }
     .copy {
       flex: 40%;
       font-size: 16px;
       h2 {
-        font-size: 60px;
         font-family: $body-light;
         font-weight: 500;
+        font-size: 30px;
+        @media (min-width: $phone-l) {
+          font-size: 60px;
+        }
       }
       h2:nth-child(2) {
         line-height: 0.5;
@@ -22,13 +35,21 @@
         margin-bottom: 1em;
       }
       .large {
-        font-size: 20px;
-        margin-top: 2em;
+        font-size: 18px;
+        margin-top: 1em;
+        @media (min-width: $phone-l) {
+          margin-top: 2em;
+          font-size: 20px;
+        }
       }
     }
   }
   .button-section {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    .btn {
+      margin-top: 2em;
+    }
   }
 }
