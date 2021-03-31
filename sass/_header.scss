@@ -1,0 +1,43 @@
+.header {
+  padding: 2em 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    img {
+      height: 66px;
+    }
+  }
+  .nav-wrapper {
+    ul ul {
+      display: none;
+    }
+    ul li:hover ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      background: white;
+    }
+  }
+  .nav {
+    display: flex;
+    li {
+      text-transform: capitalize;
+    }
+    .parent {
+      padding: 0 4em 0 0;
+      .sub {
+        box-shadow: $box;
+        border-radius: 6px;
+        padding: 0 2em 0 0.5em;
+        position: absolute;
+        li {
+          margin: 10px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

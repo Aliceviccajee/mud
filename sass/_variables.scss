@@ -7,6 +7,15 @@ $font-size-base:         1rem;
 $font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
 $line-height-base:       1.5;
 
+$body-font: 'spacegrotesk', sans-serif;
+$body-light: 'spacegrotesk-light', sans-serif;
+
+$yellow: #F2FF00;
+$green: #29A434;
+$red: #C72213;
+$dark-blue: #030014;
+$blue: #00C9FF;
+
 //
 // Breakpoints
 //
@@ -15,8 +24,45 @@ $sm-viewport: 560px;
 $md-viewport: 760px;
 $lg-viewport: 960px;
 
-//
-// Spacing
-//
+$section-padding: 3em 5em;
+$box: 0px 8px 15px rgba(0, 0, 0, 0.1);
 
-$spacer: 1rem;
+
+.btn {
+  width: 365px;
+  border: 2px solid black;
+  padding: 1em 5em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+.button-wrap:hover {
+  transform: translate(-5px, 5px);
+  .shaddow {
+    display: none;
+  }
+  .btn {
+    background: $dark-blue;
+    color: $yellow;
+  }
+}
+
+.btn-yellow {
+  background: $yellow;
+}
+
+.btn-blue {
+  background: $blue;
+}
+
+.shaddow {
+  width: 365px;
+  height: 51px;
+  transform: translate(-5px, -44px);
+  z-index: -1;
+  position: absolute;
+  border: 2px solid black;
+
+}
+
