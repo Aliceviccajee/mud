@@ -51,7 +51,7 @@
  
 .menu-toggle {
   display: block;
-  @media (min-width: $tablet-m) {
+  @media (min-width: $phone-l) {
     display: none;
   }
   margin-right: 18px;
