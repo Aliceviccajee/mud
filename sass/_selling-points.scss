@@ -48,6 +48,9 @@
         width: 80%;
         text-align: center;
         padding-top: 8px;
+        @media (min-width: $phone-l) {
+          width: 50%;
+        }
       }
     }
   }

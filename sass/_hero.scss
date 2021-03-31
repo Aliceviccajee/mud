@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     align-items: center;
     @media (min-width: $phone-l) {
-      padding: 0 0 5em 5em;
+      padding: 0 0 5em 0;
     }
     img {
       width: 90%;
@@ -26,11 +26,11 @@
         font-weight: 500;
         font-size: 30px;
         @media (min-width: $phone-l) {
+          line-height: 1;
           font-size: 60px;
         }
       }
       h2:nth-child(2) {
-        line-height: 0.5;
         color: $blue;
         margin-bottom: 1em;
       }
