@@ -752,8 +752,13 @@ textarea,
 }
 
 .latest-news .cta-block .btn {
-  margin-top: 3em;
   width: 250px;
+}
+
+@media (max-width: 650px) {
+  .latest-news .cta-block .btn {
+    margin-top: 3em;
+  }
 }
 
 .latest-news .cta-block .shaddow {
