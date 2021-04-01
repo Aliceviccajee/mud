@@ -37,7 +37,6 @@
       border-bottom: 8px solid transparent;
       vertical-align: middle;
     }
-    
     .arrow:before {
       width: 10px;
       height: 2px;
@@ -47,6 +46,7 @@
       vertical-align: middle;
     }
   }
+
   .articles {
     display: flex;
     gap: 3%;
@@ -72,6 +72,7 @@
       }
     }
   }
+  
   .cta-block {
     display: flex;
     flex-wrap: wrap;

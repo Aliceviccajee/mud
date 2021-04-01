@@ -1,3 +1,5 @@
+// CAROUSEL FUNCTIONALITY 
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,6 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// MOBILE NAV TRIGGER 
 
 document.addEventListener('DOMContentLoaded', () => {
   var trigger = document.getElementById('trigger');
